@@ -4,10 +4,12 @@ by taking various health factors as inputs.
 
 ## Screenshots
 <p align="center">
+  Case 1:
   <img src="Screenshots/c4.jpg" alt="Home">
   <img src="Screenshots/c5.jpg" alt="Form">
   <img src="Screenshots/c6.jpg" alt="Form">
   <img src="Screenshots/c7.jpg" alt="Result">
+  Case 2:
   <img src="Screenshots/c8.jpg" alt="Result">
 </p>
 
