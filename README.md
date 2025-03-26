@@ -1,5 +1,6 @@
 # Lung-Cancer-Prediction
-A project to predict the chances of lung cancer.
+A lung Cancer Prediction system with an accuracy of 99.6%. It predicts the chances of a person suffering from lung Cancer
+by taking various health factors as inputs.
 
 ## Usage
 1. Clone this repository to your local machine.
@@ -13,7 +14,7 @@ python WebApp/predict.py
 ```
 4. Start the Flask web application with:
 ```
-python WebApp/App.py
+python WebApp/main.py
 ```
 7. Access the application through your web browser at http://localhost:5000.
 8. Fill in the form with the required information.
