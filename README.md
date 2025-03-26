@@ -5,10 +5,10 @@ by taking various health factors as inputs.
 ## Screenshots
 <p align="center">
   <img src="Screenshots/c4.jpg" alt="Home">
-  <img src="/Screenshots/c5.JPG" alt="Form">
-  <img src="/Screenshots/c6.JPG" alt="Form">
-  <img src="/Screenshots/c7.JPG" alt="Result">
-  <img src="/Screenshots/c8.JPG" alt="Result">
+  <img src="Screenshots/c5.JPG" alt="Form">
+  <img src="Screenshots/c6.JPG" alt="Form">
+  <img src="Screenshots/c7.JPG" alt="Result">
+  <img src="Screenshots/c8.JPG" alt="Result">
 </p>
 
 ## Usage
