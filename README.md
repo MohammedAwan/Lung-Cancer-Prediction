@@ -1,6 +1,15 @@
-# Lung-Cancer-Prediction
+## Lung-Cancer-Prediction
 A lung Cancer Prediction system with an accuracy of 99.6%. It predicts the chances of a person suffering from lung Cancer
 by taking various health factors as inputs.
+
+## Screenshots
+<p align="center">
+  <img src="/Screenshots/c4.JPG" alt="Home">
+  <img src="/Screenshots/c5.JPG" alt="Form">
+  <img src="/Screenshots/c6.JPG" alt="Form">
+  <img src="/Screenshots/c7.JPG" alt="Result">
+  <img src="/Screenshots/c8.JPG" alt="Result">
+</p>
 
 ## Usage
 1. Clone this repository to your local machine.
