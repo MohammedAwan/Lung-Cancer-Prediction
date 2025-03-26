@@ -1,0 +1,154 @@
+/* Global Styles */
+html {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 100px; /* Simplified padding */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a more modern font */
+    color: #333; /* Dark text for readability */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #35424a; /* Darker navbar for contrast */
+    position: absolute;
+    top: -50px;
+    color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 10px 0; /* Added padding for better spacing */
+}
+
+/* Social Button Styles */
+.social {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 50px;
+    border-radius: 16px;
+    background-color: orangered;
+    color: white; /* Ensure text is visible */
+}
+
+/* Base style for the link */
+.tagline-link {
+    color: #ffffff; /* Link text color */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Allows positioning the tagline */
+    padding-bottom: 4px; /* Space for the tagline */
+    font-weight: bold;
+}
+
+/* Tagline style */
+.tagline-link::after {
+    content: ""; /* Empty content for the tagline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Start with no width */
+    height: 2px; /* Thickness of the tagline */
+    background-color: #ffffff; /* Tagline color */
+    transition: width 0.3s ease; /* Smooth expand effect */
+}
+
+/* Hover effect */
+.tagline-link:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+/* Main Container Styles */
+.maincontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto; /* Adjusted for better responsiveness */
+    justify-content: center;
+    background-color: white;
+    color: #333; /* Ensure text is visible */
+    border-radius: 16px; /* Added border radius for a softer look */
+    box-shadow: 0 4px 20px rgba(104, 103, 103, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main Heading Styles */
+.mainheading {
+    font-family: "Pacifico", cursive; /* Cursive font for a unique look */
+    background: rgba(8, 31, 241, 0.8); /* Slightly more opaque */
+    box-shadow: 0 4px 30px rgba(149, 129, 240, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(111, 78, 255, 0.3);
+    text-align: center;
+    padding: 20px; /* Increased padding for better spacing */
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    color: white; /* Ensure text is visible */
+}
+
+/* Main Content Styles */
+.maincontent {
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: #1b1b1b; /* Darker background for contrast */
+    color: white; /* Ensure text is visible */
+    padding: 50px 100px;
+    border-radius: 16px; /* Added border radius for a softer look */
+}
+
+/* Footer Styles */
+.mainfoot {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #e63946; /* Updated to a vibrant red */
+    text-align: start;
+    padding: 20px 100px;
+    color: white; /* Ensure text is visible */
+}
+
+/* Button Styles */
+.mainbutton {
+    background-color: #6c757d; /* Updated to a modern gray */
+    padding: 10px 50px;
+    border-radius: 16px;
+    color: white;
+    border: 2px solid white; /* Updated border color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.mainbutton:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Error Message Styles */
+.error {
+    color: red;
+    background-color: rgba(230, 155, 155, 0.5); /* Slightly more transparent */
+    border-radius: 30px ;
+}
+
+.question-container {
+    margin: 20px; /* Add margin for spacing */
+}
+
+.yes-no-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between questions */
+}
+
+.button {
+    background-color: rgba(8, 31, 241, 0.8); /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 16px; /* Font size */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:focus {
+    outline: none; /* Remove outline on focus */
+}

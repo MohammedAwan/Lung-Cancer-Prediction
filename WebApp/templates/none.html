@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Prediction App</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="maincontainer ">
+      <div class="mainheading">
+        <h1 id="heading">Lung Cancer Prediction </h1>
+      </div>
+      <div class="maincontent">
+        <div class="error">
+            <h5 id="value_error">Please fill all the values</h5>
+        </div>
+
+        <form method="POST" action="{{ url_for('predict') }}">
+          <p>Select Gender: </p>
+          <select name="gender" class="form-select mb-4" aria-label="Default select example">
+            <option selected>None</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+          </select>
+        
+
+          <p>Enter Your Age:</p>
+          <div class="form-floating mb-3">
+            <input name="age" type="number" class="form-control" id="floatingInput" placeholder="name@example.com" style="color: black;" min="1" max="120">
+            <label for="floatingInput" style="color: black;">Age</label>
+          </div>
+
+          <p>Select you <a class="tagline-link" href="https://en.wikipedia.org/wiki/Smoking">Smoke</a> or not:</p>
+          <select name="smoke" class="form-select mb-4" aria-label="Default select example">
+            <option selected>None</option>
+            <option value="2">Yes</option>
+            <option value="1">No</option>
+          </select>
+
+        <p>Select you had <a class="tagline-link" href="https://en.wikipedia.org/wiki/Raynaud_syndrome">Yellow Fingers</a> or not:</p>
+        <select name="yellow_finger" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="https://en.wikipedia.org/wiki/Anxiety">Anxiety</a> or not:</p>
+        <select name="anxiety" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="">Peer Pressure</a> or not:</p>
+        <select name="peer_pressure" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="https://en.wikipedia.org/wiki/Chronic_condition">Chronic Disease</a> or not:</p>
+        <select name="chronic_disease" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="https://www.verywellhealth.com/fatigue-symptoms-causes-diagnosis-and-treatment-4768481">Fatigue</a> or not:</p>
+        <select name="fatigue" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="https://en.wikipedia.org/wiki/Allergy">Allergy</a> or not:</p>
+        <select name="allergy" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a class="tagline-link" href="https://www.msdmanuals.com/home/lung-and-airway-disorders/symptoms-of-lung-disorders/wheezing?ruleredirectid=743#Causes_v1669911">Wheezing</a> or not:</p>
+        <select name="wheezing" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you consume Alcohol or not:</p>
+        <select name="alcohol" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Cough or not:</p>
+        <select name="cough" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Shortness in Breath or not:</p>
+        <select name="shortness_in_breath" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Swallowing Difficulty or not:</p>
+        <select name="swallowing" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Chest Pain or not:</p>
+        <select name="chest_pain" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <button type="submit" class="mainbutton"  id="button">Predict 😰</button>
+        </form>
+
+      </div>
+      
+    </div> 
+    <script src="../static/script/index.js"></script>
+</body>
+</html> 

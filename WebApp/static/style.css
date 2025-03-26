@@ -1,0 +1,133 @@
+html {
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .navbar {
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  .social {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 50px;
+    border-radius: 16px;
+    background-color: orangered;
+  }
+  
+  /* Base style for the link */
+  .tagline-link {
+    color: #ffffff;                 /* Link text color */
+    text-decoration: none;       /* Remove default underline */
+    position: relative;          /* Allows positioning the tagline */
+    padding-bottom: 4px;         /* Space for the tagline */
+    font-weight: bold;
+  }
+  
+  /* Tagline style */
+  .tagline-link::after {
+    content: "";                 /* Empty content for the tagline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;                    /* Start with no width */
+    height: 2px;                 /* Thickness of the tagline */
+    background-color: #ffffff;      /* Tagline color */
+    transition: width 0.3s ease; /* Smooth expand effect */
+  }
+  
+  /* Hover effect */
+  .tagline-link:hover::after {
+    width: 100%;                 /* Expand to full width on hover */
+  }
+  
+  
+  .maincontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 3fr auto;  
+    justify-content: center;
+    background-color: white;
+    color: white;
+  }
+  
+  .mainheading {
+    font-family: "Pacifico", serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* background-color: rgb(185, 175, 233); */
+  
+    /* From https://css.glass */
+    background: rgba(36, 5, 235, 0.766);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(111, 78, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(111, 78, 255, 0.3);
+  
+    text-align: center;
+    padding-top: 2.5%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  
+  }
+  
+  .maincontent {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: black;
+    padding: 50px 100px;
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+  }
+  
+  .mainfoot {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: red;
+    text-align: start;
+    padding: 20px 100px;
+  }
+  
+  .mainbutton {
+    background-color: gray;
+    padding: 10px 50px;
+    border-radius: 16px;
+    color: white;
+    border: 2px white solid;
+  }
+  
+  .error {
+    color: red;
+    background-color: rgba(230, 155, 155, 0.288);
+    border-radius: 30px;
+    border: 2px red solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  
+  #value_error {
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -5px;
+  }
+  
+  #heading {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 5px  black;
+    padding: 10px;
+  }
+  
+  #button {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 5px  black;
+  }
