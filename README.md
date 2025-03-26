@@ -1,9 +1,9 @@
-## Lung-Cancer-Prediction
+# Lung-Cancer-Prediction
 A lung Cancer Prediction system with an accuracy of 99.6%. It predicts the chances of a person suffering from lung Cancer
 by taking various health factors as inputs.
 
-## Screenshots
-  # Case 1:
+# Screenshots
+  ## Case 1:
   <p align="center">
   <img src="Screenshots/c4.jpg" alt="Home">
   <img src="Screenshots/c5.jpg" alt="Form">
@@ -11,12 +11,12 @@ by taking various health factors as inputs.
   <img src="Screenshots/c7.jpg" alt="Result">
   </p>
   
- # Case 2:
+ ## Case 2:
   <p align="center">
   <img src="Screenshots/c8.jpg" alt="Result">
 </p>
 
-## Usage
+# Usage
 1. Clone this repository to your local machine.
 2. Install the required dependencies:
 ```
