@@ -32,6 +32,6 @@ python WebApp/main.py
 ```
 7. Access the application through your web browser at http://localhost:5000.
 8. Fill in the form with the required information.
-9. Click the "Submit" button to get the predicted outcome.
+9. Click the "Predict" button to get the predicted outcome.
 
 
