@@ -3,13 +3,16 @@ A lung Cancer Prediction system with an accuracy of 99.6%. It predicts the chanc
 by taking various health factors as inputs.
 
 ## Screenshots
-<p align="center">
   # Case 1:
+  <p align="center">
   <img src="Screenshots/c4.jpg" alt="Home">
   <img src="Screenshots/c5.jpg" alt="Form">
   <img src="Screenshots/c6.jpg" alt="Form">
   <img src="Screenshots/c7.jpg" alt="Result">
-  # Case 2:
+  </p>
+  
+ # Case 2:
+  <p align="center">
   <img src="Screenshots/c8.jpg" alt="Result">
 </p>
 
